@@ -1,0 +1,143 @@
+.about-main
+{
+    width: 90vw;
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px 5px whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 10em;
+    margin: auto;
+    margin-bottom: 5vh;
+}
+
+.about-main .main-left
+{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid orange; */
+    border-right: 1px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-left img
+{
+    object-fit:contain;
+    max-width: 70%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px gray;
+}
+
+.main-right 
+{
+    width: 45%;
+    /* border: 1px solid orangered; */
+    /* background-color: white; */
+    color: gray;
+    display: flex;
+    padding: .8em;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    font-family: 'Rubik', sans-serif;
+}
+
+.main-right h2
+{
+    text-align: center;
+    color:#6674cc;
+    font-size: 1.3rem;
+    padding-bottom: 2px;
+    margin-top: 0;
+}
+
+.main-right p
+{
+    font-size: .6rem;
+    font-weight: 500;
+    color: rgb(110, 107, 107);
+}
+
+.details 
+{
+    width: 40vw;
+    height:40vh;
+    margin-left: 40%;
+    /* border: 1px solid red; */
+    margin-bottom: 40vh;
+    margin-top: 3em;
+}
+
+.detail-name 
+{
+    font-size: 1.3rem;
+    color: #6674cc;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+
+/* Responsive  */
+
+@media only screen and (max-width: 700px)
+{
+    .about-main
+    {
+        width: 100vw;
+        flex-direction: column-reverse;
+        margin-top: 3em;
+    }
+
+    .about-main .main-left
+    {
+        width: 100%;
+        /* border: 1px solid red; */
+        box-shadow: none;
+        border-radius: 0px;
+    }
+
+    .main-left img
+    {
+        width: 100%;
+        object-fit:contain;
+    }
+
+    .main-right
+    {
+        height: 60%;
+        width: 95%;
+        /* border: 1px solid yellowgreen; */
+        margin: auto auto;
+    }
+
+    .main-right p
+    {
+        font-size: .8rem;
+        text-align: justify;
+        padding-left:.5em;
+        padding-right: .5em;
+    }
+
+    .details 
+    {
+        width: 100vw;
+        height: 25vh;
+        margin: auto;
+        margin-bottom: 25vh;
+    }
+
+    .detail-name 
+    {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .details img
+    {
+        margin: auto;
+    }
+
+}
